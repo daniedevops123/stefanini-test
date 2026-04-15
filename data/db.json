@@ -1,0 +1,18 @@
+{
+  "products": [
+    { "id": 1, "name": "Laptop Pro", "category": "Electronics", "price": 1299.99, "stock": 45 },
+    { "id": 2, "name": "Wireless Mouse", "category": "Accessories", "price": 29.99, "stock": 120 },
+    { "id": 3, "name": "USB-C Hub", "category": "Accessories", "price": 49.99, "stock": 85 },
+    { "id": 4, "name": "4K Monitor", "category": "Electronics", "price": 399.99, "stock": 30 }
+  ],
+  "users": [
+    { "id": 1, "name": "Alice García", "email": "alice@example.com", "role": "admin" },
+    { "id": 2, "name": "Bob Martínez", "email": "bob@example.com", "role": "user" },
+    { "id": 3, "name": "Carol López", "email": "carol@example.com", "role": "user" }
+  ],
+  "orders": [
+    { "id": 1, "userId": 1, "productId": 1, "quantity": 1, "status": "delivered", "total": 1299.99 },
+    { "id": 2, "userId": 2, "productId": 2, "quantity": 2, "status": "pending", "total": 59.98 },
+    { "id": 3, "userId": 3, "productId": 3, "quantity": 1, "status": "shipped", "total": 49.99 }
+  ]
+}

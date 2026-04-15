@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/db.json:/app/db.json
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/products"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: stefanini-json-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /products
+    envVars:
+      - key: PORT
+        value: 3000

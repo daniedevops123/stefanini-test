@@ -1,0 +1,8 @@
+# Copiar este archivo a terraform.tfvars y completar los valores reales.
+# NUNCA subir terraform.tfvars al repositorio — contiene secrets.
+
+render_api_key     = "rnd_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+render_owner_id    = "usr-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+dockerhub_username = "danvalrl"
+service_name       = "stefanini-json-api"
+region             = "oregon"
